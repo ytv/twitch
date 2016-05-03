@@ -1,0 +1,69 @@
+.container-fluid {
+  padding: 3% 8%;
+  font: 15px Arial, Sans-Serif;
+  background-color: #333;
+  color: #fff;
+}
+.img-responsive {
+  margin: 0 auto;
+  width: 100%;
+}
+.box {
+  background-color: #555;
+}
+.favs, .streams {
+  padding: 0 25px 25px 25px;
+}
+.stream, .fav {
+  padding: 15px;
+}
+.header {
+  font-size: 40px;
+  font-weight: bold;
+  color: #8282ee;
+  margin: 10px 25px;
+}
+.subheader {
+  font-size: 22px;
+  font-weight: bold;
+  color: #eee;
+  margin-left: 35px;
+}
+.content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+a, a:hover {
+  color: #fff;
+}
+.statusDiv {
+  font-size: 18px;
+}
+.nameDiv, .nameDiv a {
+  color: #9282ee;
+  font-weight: bold;
+}
+#streamNameDiv {
+  float: left;
+}
+#streamViewersDiv {
+  float: right;
+}
+#streamGameDiv {
+  color: #ccc;
+}
+#favImgDiv{
+  min-height:
+}
+.fa-eye, .fa-users {
+  color: #ffff66;
+}
+.fav .fa-eye {
+  margin-left: 10px;
+}
+.footer {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 15px;
+}
