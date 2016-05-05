@@ -7,7 +7,14 @@ var App = {
     baseUrl: "https://api.twitch.tv/kraken",
     streams: "/streams?callback=?",
     channels: "/channels/",
-    favs: ["ESL_SC2", "TSM_Bjergsen", "freecodecamp", "storbeck", "beyondthesummit", "OgamingSC2", "cretetion", "comster404" /*,"noobs2ninjas","beohoff", "brunofin", "MushIsGosu", "habathcx"*/ ],
+    favs: ["ESL_SC2",
+        "TSM_Bjergsen",
+        "freecodecamp",
+        "storbeck",
+        "beyondthesummit",
+        "OgamingSC2",
+        "cretetion",
+        "comster404"],
     streamLimit: 7,
     favLimit: 8,
   },
@@ -17,7 +24,6 @@ var App = {
     // an array of objects, each object consisting of data on current streams.
     // Objects are sorted by current number of viewers in descending order
     this._getData(this.apiUrl.streams, 'streams', this._parseStreams, this.apiUrl.streamLimit);
-
     // an $.ajax call to baseUrl + "/streams/" + [user] + "?callback=?", with the key
     // "stream" returns an object.  If online, the stream object will have a key "channel" with
     // the user's channel information .  If offline, the stream object will be null.

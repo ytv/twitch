@@ -1,69 +1,93 @@
-.container-fluid {
-  padding: 3% 8%;
-  font: 15px Arial, Sans-Serif;
-  background-color: #333;
-  color: #fff;
+/* Headers*/
+
+.header {
+  color: #8282ee;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 25px;
 }
+
+.subheader {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 35px;
+}
+
+/* Images */
+
 .img-responsive {
   margin: 0 auto;
   width: 100%;
 }
+
+/* containers*/
+
+.container-fluid {
+  background-color: #333;
+  color: #fff;
+  font: 15px Arial, Sans-Serif;
+  padding: 3% 8%;
+}
+
 .box {
   background-color: #555;
 }
+
 .favs, .streams {
   padding: 0 25px 25px 25px;
 }
+
 .stream, .fav {
   padding: 15px;
 }
-.header {
-  font-size: 40px;
-  font-weight: bold;
-  color: #8282ee;
-  margin: 10px 25px;
-}
-.subheader {
-  font-size: 22px;
-  font-weight: bold;
-  color: #eee;
-  margin-left: 35px;
-}
+
+/* Details for each channel */
+
 .content {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
 a, a:hover {
   color: #fff;
 }
+
 .statusDiv {
   font-size: 18px;
 }
+
 .nameDiv, .nameDiv a {
   color: #9282ee;
   font-weight: bold;
 }
+
 #streamNameDiv {
   float: left;
 }
+
 #streamViewersDiv {
   float: right;
 }
+
 #streamGameDiv {
   color: #ccc;
 }
-#favImgDiv{
-  min-height:
-}
+
+/* FA icons */
+
 .fa-eye, .fa-users {
   color: #ffff66;
 }
 .fav .fa-eye {
   margin-left: 10px;
 }
+
+/* Footer */
+
 .footer {
-  text-align: center;
-  margin: 50px 0;
   font-size: 15px;
+  margin: 50px 0;
+  text-align: center;
 }
