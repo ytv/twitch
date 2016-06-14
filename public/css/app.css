@@ -80,9 +80,6 @@ a, a:hover {
 .fa-eye, .fa-users {
   color: #ffff66;
 }
-.fav .fa-eye {
-  margin-left: 10px;
-}
 
 /* Footer */
 
@@ -90,4 +87,18 @@ a, a:hover {
   font-size: 15px;
   margin: 50px 0;
   text-align: center;
+}
+
+/*-----MEDIA QUERIES-----*/
+
+@media screen and (max-width: 768px) {
+    .container-fluid {
+      padding: 2% 3%;
+    }
+    #streamNameDiv {
+      float: none;
+    }
+    #streamViewersDiv {
+      float: left;
+    }
 }

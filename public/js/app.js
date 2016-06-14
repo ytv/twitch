@@ -95,7 +95,7 @@ var App = {
         '<div class="content imgDiv" id="streamImgDiv"><a target="_blank" href="' + currStreams[i].url + '">' + '<img class="img-responsive" src="' + currStreams[i].previewImg + '"/></a></div>' +
         '<div class="content statusDiv" id="streamStatusDiv"><a target="_blank" href="' + currStreams[i].url + '">' + currStreams[i].status + '</a></div>' +
         '<div class="content nameDiv" id="streamNameDiv"><a target="_blank" href="' + currStreams[i].url + '/profile">' + currStreams[i].displayName + '</a></div>' +
-        '<div class="content viewersDiv" id="streamViewersDiv"><i class="fa fa-eye"></i> ' + App._addCommas(currStreams[i].viewers) + ' viewers' + '</div><br>' +
+        '<div class="content viewersDiv" id="streamViewersDiv"><i class="fa fa-eye"></i> ' + App._formatNum(currStreams[i].viewers) + ' viewers' + '</div><br>' +
         '<div class="content gameDiv" id="streamGameDiv">playing ' + currStreams[i].game +'</div>' +
         '</div>'
       );
@@ -113,8 +113,8 @@ var App = {
         '<img class="img-responsive" src="' + channelData.logo + '"/></a></div>' +
         '<div class="content statusDiv" id="favStatusDiv"><a target="_blank" href="' + channelData.url + '">' + channelData.status + '</a></div>' +
         '<div class="content nameDiv" id="favNameDiv"><a target="_blank" href="' + channelData.url + '/profile">' + channelData.display_name + '</a></div>' +
-        '<span class="content followers" id="favFollowers"><i class="fa fa-users"></i> ' + App._addCommas(channelData.followers) + ' </span>' +
-        '<span class="content totViewsDiv" id="favTotViewsDiv"><i class="fa fa-eye"></i> ' + App._addCommas(channelData.views) + '</span>' +
+        '<div class="content followers" id="favFollowers"><i class="fa fa-users"></i> ' + App._formatNum(channelData.followers) + '</div>' +
+        '<div class="content totViewsDiv" id="favTotViewsDiv"><i class="fa fa-eye"></i> ' + App._formatNum(channelData.views) + '</div>' +
         '</div>'
       );
     }
@@ -144,8 +144,8 @@ var App = {
       '<img class="img-responsive" src="' + img + '"/></a></div>' +
       '<div class="content statusDiv" id="favStatusDiv">' + 'Offline' + '</div>' +
       '<div class="content nameDiv" id="favNameDiv"><a target="_blank" href="' + channel.url + '/profile">' + channel.display_name + '</a></div>' +
-      '<span class="content followers" id="favFollowers"><i class="fa fa-users"></i> ' + App._addCommas(channel.followers) + ' </span>' +
-      '<span class="content totViewsDiv" id="favTotViewsDiv"><i class="fa fa-eye"></i> ' + App._addCommas(channel.views) + '</span>' +
+      '<div class="content followers" id="favFollowers"><i class="fa fa-users"></i> ' + App._formatNum(channel.followers) + '</div>' +
+      '<div class="content totViewsDiv" id="favTotViewsDiv"><i class="fa fa-eye"></i> ' + App._formatNum(channel.views) + '</div>' +
       '</div>'
     );
   },
@@ -160,7 +160,7 @@ var App = {
       '</div>'
     );
   },
-  _addCommas: function(x) {
+  _formatNum: function(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
